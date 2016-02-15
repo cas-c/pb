@@ -1,0 +1,22 @@
+<div class="sbcont">
+<div class="sbimg"></div>
+<h3 class="sbhead">distraction free <i>!</i></h3>
+    <div class="sbtext">
+        <div style="margin:0px auto; width: 175; height: 20px; text-align: center;">
+            <button id="hider" style="width:36px;">cbox</button> 
+            <button style="width:36px;" id="shower">side</button> 
+            <button id="killer" style="width:36px;">kill</button><br />
+<script>
+$( "#hider" ).click(function() {
+  $( ".distractions" ).toggle();
+});
+$( "#shower" ).click(function() {
+  $( ".sidebarr-right-td" ).toggle();
+});
+    $("#killer").click(function(){
+        $( ".distractions, .sidebarr-right-td" ).remove();
+    });
+</script>
+        </div>
+</div>
+</div>
